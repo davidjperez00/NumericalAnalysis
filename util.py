@@ -129,12 +129,10 @@ def load_preprocessed_data():
   converted_vehicles.reset_index(inplace=True)
 
   # Drop column old indexes created by calling 'reset_index'
-  # converted_vehicles.drop(converted_vehicles['index'].index, inplace = True)
   converted_vehicles.drop(['index'], axis=1, inplace = True)
 
   normalize_numerical_data_attributes(converted_vehicles)
 
-  # Split data
   train_set, test_set = train_test_split(vehicles, test_size=0.2, random_state=42)
 
   return train_set, test_set
