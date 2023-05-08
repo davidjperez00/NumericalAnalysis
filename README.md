@@ -5,5 +5,5 @@ This repository proposes three different approaches to predicting vehicle prices
 
 The three approaches that were taken are:
 * Polynomial Regression model with 1 feature
-* Polynomial Regression model with 3 features
+* Polynomial Regression model with all features
 * Neural Network incorporating all dataset features
